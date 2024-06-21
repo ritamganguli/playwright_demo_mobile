@@ -46,6 +46,8 @@ jobs:
           export LT_USERNAME=${{ github.event.inputs.username }}
           export LT_ACCESS_KEY=${{ github.event.inputs.accessKey }}
           export LT_BUILD_NAME=${{ github.event.inputs.build }}
+          npm i 
+          npm install axios
           echo $LT_BUILD_NAME
           echo $LT_USERNAME
           echo $LT_ACCESS_KEY
